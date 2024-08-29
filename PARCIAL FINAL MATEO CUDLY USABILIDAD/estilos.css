@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Al menos el 100% de la altura de la ventana */
+}
+
+header {
+    background-color: #0066cc;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    color: #FFFFFF;
+    padding: 5px 10px;
+    background-color: #6495ED;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+h1 a,
+p a,
+h2 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: #000;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    max-width: 800px;
+    text-align: left;
+}
+
+h2 {
+    color: #0066cc;
+    margin-top: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Regla para cambiar el color de los enlaces dentro de los párrafos de la sección */
+section p a {
+    color: #7800FF;
+}
+
+footer {
+
+    background-color: #0066cc;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto; /* El pie de página siempre se mantendrá en la parte inferior */
+    width: 100%; /* El pie de página ocupa todo el ancho */
+    flex-shrink: 0; /* Evita que el pie de página se reduzca */
+    position: sticky;
+    bottom: 0;
+}
+
+.producto-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.producto {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+}
